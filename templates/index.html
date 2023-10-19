@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='Travel bg.jpg') }}');">
+    
+    <section style="background-image: url('{{ url_for('static', filename='Travel bg.jpg') }}');">
+        <h1>Welcome to Our Travel Destination</h1>
+        <p>Explore our amazing and book your next adventure.</p>
+    </section>
+    <h1>Choose your destination</h1>
+    <ul>
+        {% for destination in destinations %}
+            <li><a href="{{ url_for('book', destination=destination) }}">{{ destination }}</a></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
+
+

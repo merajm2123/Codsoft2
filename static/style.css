@@ -1,0 +1,18 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 30px
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* styles.css */
+body.background-image {
+    background: url('C:\Users\sk946\Downloads\Travel bg.jpg') center/cover no-repeat;
+}
+
